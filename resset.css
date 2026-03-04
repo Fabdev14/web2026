@@ -1,0 +1,51 @@
+:root {
+  --black-color: #000;
+  --white-color: #fff;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  vertical-align: middle;
+  min-width: 100%;
+  object-fit: cover;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+.section {
+  padding: 0 1rem;
+}
+.bg-dark {
+  background-color: #000;
+}
+.container-screen {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-h-screen {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
