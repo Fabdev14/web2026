@@ -86,7 +86,8 @@ svg {
 }
 
 .grid-three,
-.grid-four {
+.grid-four,
+.grid-two {
   width: 100%;
   display: grid;
   grid-row-gap: 24px;
@@ -105,6 +106,9 @@ svg {
 }
 .section-padding {
   padding: 3rem 1.3rem;
+}
+.section-title {
+  margin-bottom: 2rem;
 }
 .section-title-h2 {
   background: radial-gradient(#eff1ff, black 90%);
@@ -276,7 +280,6 @@ svg {
   background-color: black;
   border-radius: 16px;
   position: relative;
-  /* outline: 1px solid #222; */
   outline: 1px solid var(--Card-Border, rgba(255, 255, 255, 0.06));
   outline: 1px solid var(--Card-Border, rgba(255, 255, 255, 0.1));
   box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
@@ -375,6 +378,34 @@ svg {
   font-family: font-400;
   color: var(--green-brand);
 }
+.events-city {
+  font-family: font-400;
+}
+
+/* TESTISMONIALS */
+.testimonials-image {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+.testimonials-avatar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.testimonials-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.testimonials-icons {
+  padding: 1rem 0 0 0;
+}
+.testimonials-p {
+  font-family: font-400;
+  color: var(--white-brand);
+}
 
 @media screen and (min-width: 64em) {
   /* === UTILITIES === */
@@ -385,6 +416,9 @@ svg {
   }
   .grid-three {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .grid-two {
+    grid-template-columns: repeat(2, 1fr);
   }
   .grid-four {
     grid-template-columns: repeat(4, 1fr);
